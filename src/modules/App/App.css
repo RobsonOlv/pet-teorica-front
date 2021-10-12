@@ -1,0 +1,39 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.examArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svgicon{
+ position: absolute;
+ right: 0;
+ bottom: 0;
+ z-index: -1;
+}
+
+button {
+  all:unset;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.02);
+  transition: all .2s ease-in-out;
+}
+
+@media (max-width: 1024px) {
+  .svgicon{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 70%;
+   }
+}
