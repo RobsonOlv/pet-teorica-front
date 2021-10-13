@@ -67,7 +67,7 @@ const Login = () => {
     const cleanRA = sanitizeRa(ra), cleanCPF = sanitizeCpf(cpf);
     var error = '', goToExam = false;
     try {
-      const req = await request.get(`http://localhost:3333/user?ra=${cleanRA}&cpf=${cleanCPF}`);
+      const req = await request.get(`https://pet-teorica-back.herokuapp.com/user?ra=${cleanRA}&cpf=${cleanCPF}`);
       const data = req.data;
       if (req.status !== 200) {
         error = 'Problema na requisição, tente novamente.';
